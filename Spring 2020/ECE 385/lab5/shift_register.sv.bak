@@ -1,0 +1,42 @@
+module shift_reg_8 (
+    input logic [7:0] parallel_in,
+    input logic       serial_input,
+    input logic       right_shift_enable,
+    input logic       clear,
+    input logic       load,
+    input logic       Clk,
+    output logic [7:0] parallel_out
+);
+
+    always_ff @ (posedge Clk) begin
+        parallel_out <= parallel_out;
+        if(clear) begin
+            parallel_out <= 8'b0;
+        end else if (right_shift_enable) begin
+            parallel_out >> 1;
+            parallel_out[7] <= serial_input;
+        end else if (load) begin
+            parallel_out <= parallel_in;
+        end
+    end
+
+endmodule
+
+module ff_X (
+    input logic in;
+    input logic Clk;
+    input logic load;
+    input logic clear;
+    output logic out;
+);
+
+    always_ff @ (posedge Clk) begin
+        out <= out;
+        if(clear) begin
+            out <= 1'b0;
+        end else if (load) begin
+            out <= in;
+        end
+    end
+
+endmodule

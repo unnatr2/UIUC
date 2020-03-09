@@ -1,0 +1,69 @@
+module datapath(
+    input logic Clk,    //
+    input logic LD_MAR, //
+	input logic LD_MDR, //
+    input logic LD_IR,  //
+    input logic LD_BEN,
+    input logic LD_CC,
+    input logic LD_REG,
+    input logic LD_PC,  //
+    input logic LD_LED,
+    input logic GatePC, //
+    input logic GateMDR,    //
+	input logic GateALU,    //
+	input logic GateMARMUX, //
+    input logic ALUK,								
+	input logic [1:0]  PCMUX,   //
+	input logic DRMUX,
+	input logic SR1MUX,
+	input logic SR2MUX,
+	input logic ADDR1MUX,
+    input logic [1:0]  ADDR2MUX,
+    input logic Mem_OE,
+    input logic Mem_WE,
+    input logic MIO_EN, //
+    input logic [15:0] MDR_In,  //
+    input logic Reset,    
+    output logic BEN,
+    output logic [3:0] IR_opcode,   //
+    output logic MAR,   //
+    output logic MDR,   //
+    output logic IR,    //
+    output logic PC //
+);
+
+    wire [15:0] BUS;
+    logic [15:0] ALU;
+    logic [15:0] MARMUX;
+    
+    // TODO: Adder with ADDER1MUX and ADDER2MUX...
+    logic [15:0] ADDER_out;
+    
+    // PC Package
+    logic [15:0] PCMUX_out;
+    logic [15:0] PCMUX_inputs [3] = `{ PC+1, BUS, ADDER_out };
+    register #(16) PC_reg(.Clk(Clk), .data_in(PCMUX_out), .data_out(PC), .load_enable(LD_PC) .clear(Reset));
+    mux #(.WIREWIDTH=16, .NUMINPUTS(3)) PC_multiplexer(.select(PCMUX), .ins(PCMUX_inputs), .out(PCMUX_out));
+    
+    // IR Package
+    logic [15:0] IR;
+    register #(16) IR_reg(.Clk(Clk), .data_in(BUS), .data_out(IR), .load_enable(LD_IR), .clear(Reset));
+    assign IR_opcode = IR[15:12];
+    
+    // MDR Package
+    logic [15:0] MDR;
+    logic [15:0] MDRMUX_out;
+    logic [15:0] MDRMUX_inputs [2] = `{ BUS, MDR_In };
+    register #(16) MDR_reg(.Clk(Clk), .data_in(MDRMUX_out), .data_out(MDR), .load_enable(LD_MDR), .clear(Reset));
+    mux #(.WIREWIDTH=16, .NUMINPUTS(2)) MDR_multiplexer(.select(MIO_EN), .ins(MDRMUX_inputs), .out(MDRMUX_out));
+
+    // MAR Package
+    logic [15:0] MAR;
+    register #(16) MAR_reg(.Clk(Clk), .data_in(BUS), .data_out(MAR), .load_enable(LD_MAR), .clear(Reset));
+
+    // Bus & Tristate Buffer Package
+    logic [15:0] busGateInputs [4] = '{ PC, MDR, ALU, MARMUX };
+    assign logic [1:0] busSelect = { ~GatePC & ~GateMDR, ~GateALU & ~GatePC };
+    mux #(.WIREWIDTH=16, .NUMINPUTS(4)) busGate_multiplexer(.select(busSelect), .ins(busGateInputs), .out(BUS));
+    
+endmodule

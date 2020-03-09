@@ -1,0 +1,54 @@
+module testbench();
+
+    // Define time constraints
+	timeunit 10ns;
+    timeprecision 1ns;
+    
+    // Reserved input names for toplevel
+    logic           Clk;
+    logic           Reset;
+    logic           ClearAX_LoadB;
+    logic           Run;
+    logic [7:0]     S;
+    logic           X;         
+    logic [6:0]     AhexU;      
+    logic [6:0]     AhexL;
+    logic [6:0]     BhexU;
+    logic [6:0]     BhexL;
+    logic [7:0]     Aval;
+    logic [7:0]     Bval;
+
+    
+    // Run the clock
+    always begin: CLOCK_GENERATION
+        #1 Clk = ~Clk;
+    end
+
+    // Initialize the clock
+    initial begin: CLOCK_INITIALIZATION
+        Clk = 0;
+    end
+    
+    logic [8:0] A;
+    logic [8:0] B;
+    logic [8:0] Sum;
+    logic [8:0] Sum_comb;
+    cra ra(.CIN(0), .A(A), .B(A), .COUT(), .Sum(Sum_comb));
+    
+    initial begin: TESTS
+        integer ERR = 0;
+        
+        // Create the toplevel entity
+        // toplevel tp(.*);
+        
+        #1 A = 9'b1;
+        #1 B = 9'b10;
+        #2 Sum = Sum_comb
+
+        if(9'b11 != Sum) ERR++;
+
+        if (ERR == 0) $display("All tests passed.");
+        else $display("%d error(s) detected.", ERR);
+        
+    end
+endmodule

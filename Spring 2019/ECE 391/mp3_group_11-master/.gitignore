@@ -1,0 +1,17 @@
+# Object files from Make builds
+*.o
+*/*.o
+
+# Makefile deps
+Makefile.dep
+
+# VSCode Local Configuration
+.vscode/*
+
+# Compiled binaries
+student-distrib/bootimg
+student-distrib/mp3.img
+
+# Whitelist Task and Launch Debug Runners
+!.vscode/launch.json
+!.vscode/tasks.json

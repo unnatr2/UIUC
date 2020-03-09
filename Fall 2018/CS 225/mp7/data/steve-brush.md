@@ -1,0 +1,1 @@
+Steve brushes his teeth and then goes to sleep.

@@ -1,0 +1,236 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/unnat/Desktop/ECE 385/lab5/simulation/modelsim
+vadd_sub
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1582692989
+!i10b 1
+!s100 nCJZ6n9[A7X:1Bf=?QPRk0
+IYVFZN:1I?bdV[6E1aF@GJ1
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 !s105 add_sub_sv_unit
+S1
+R0
+Z5 w1582081060
+Z6 8C:/Users/unnat/Desktop/ECE 385/lab5/add_sub.sv
+Z7 FC:/Users/unnat/Desktop/ECE 385/lab5/add_sub.sv
+L0 1
+Z8 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z9 !s108 1582692989.000000
+Z10 !s107 C:/Users/unnat/Desktop/ECE 385/lab5/add_sub.sv|
+Z11 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/unnat/Desktop/ECE 385/lab5|C:/Users/unnat/Desktop/ECE 385/lab5/add_sub.sv|
+!i113 1
+Z12 o-sv -work work
+Z13 !s92 -sv -work work {+incdir+C:/Users/unnat/Desktop/ECE 385/lab5}
+Z14 tCvgOpt 0
+vcontrol_unit
+R1
+R2
+!i10b 1
+!s100 [6ReR:@GgOBjUh8YC4T1B0
+In61YlU?lIh;OVc0MhSF_R2
+R3
+!s105 control_sv_unit
+S1
+R0
+Z15 w1582259125
+8C:/Users/unnat/Desktop/ECE 385/lab5/control.sv
+FC:/Users/unnat/Desktop/ECE 385/lab5/control.sv
+L0 1
+R8
+r1
+!s85 0
+31
+Z16 !s108 1582692988.000000
+!s107 C:/Users/unnat/Desktop/ECE 385/lab5/control.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/unnat/Desktop/ECE 385/lab5|C:/Users/unnat/Desktop/ECE 385/lab5/control.sv|
+!i113 1
+R12
+R13
+R14
+vff_X
+R1
+Z17 !s110 1582692988
+!i10b 1
+!s100 N`C>W4AI:o4hCbOP[5Q9o3
+Ij1I723=Bz3WTRcJ0O3U?E3
+R3
+Z18 !s105 shift_register_sv_unit
+S1
+R0
+R15
+Z19 8C:/Users/unnat/Desktop/ECE 385/lab5/shift_register.sv
+Z20 FC:/Users/unnat/Desktop/ECE 385/lab5/shift_register.sv
+Z21 L0 29
+R8
+r1
+!s85 0
+31
+R16
+Z22 !s107 C:/Users/unnat/Desktop/ECE 385/lab5/shift_register.sv|
+Z23 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/unnat/Desktop/ECE 385/lab5|C:/Users/unnat/Desktop/ECE 385/lab5/shift_register.sv|
+!i113 1
+R12
+R13
+R14
+nff_@x
+vfull_adder
+R1
+R2
+!i10b 1
+!s100 Ri?eW5n^oIGUfSR;jE5dP0
+I4Gd7:Rca9HdESG@<Gaa:T0
+R3
+R4
+S1
+R0
+R5
+R6
+R7
+L0 43
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+R14
+vHexDriver
+R1
+R17
+!i10b 1
+!s100 1ei]:]<J4<aR6`goldd3b1
+IjQKom@^JQeYUeK>`TA@zf3
+R3
+!s105 HexDriver_sv_unit
+S1
+R0
+w1582078810
+8C:/Users/unnat/Desktop/ECE 385/lab5/HexDriver.sv
+FC:/Users/unnat/Desktop/ECE 385/lab5/HexDriver.sv
+L0 1
+R8
+r1
+!s85 0
+31
+R16
+!s107 C:/Users/unnat/Desktop/ECE 385/lab5/HexDriver.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/unnat/Desktop/ECE 385/lab5|C:/Users/unnat/Desktop/ECE 385/lab5/HexDriver.sv|
+!i113 1
+R12
+R13
+R14
+n@hex@driver
+vshift_reg_8
+R1
+R17
+!i10b 1
+!s100 W:fFDD[GIOO2bWR:^OhzN1
+IDN[kO0X>6eK[bfh5doY:e1
+R3
+R18
+S1
+R0
+R15
+R19
+R20
+L0 1
+R8
+r1
+!s85 0
+31
+R16
+R22
+R23
+!i113 1
+R12
+R13
+R14
+vtestbench
+R1
+!s110 1582695230
+!i10b 1
+!s100 3RiaLN1=2JRU46jaMWG123
+Ig]BQXJod@F47<eQSEd[0G2
+R3
+!s105 testbench_sv_unit
+S1
+R0
+w1582695222
+8C:/Users/unnat/Desktop/ECE 385/lab5/testbench.sv
+FC:/Users/unnat/Desktop/ECE 385/lab5/testbench.sv
+L0 1
+R8
+r1
+!s85 0
+31
+!s108 1582695230.000000
+!s107 C:/Users/unnat/Desktop/ECE 385/lab5/testbench.sv|
+!s90 -reportprogress|300|-work|work|C:/Users/unnat/Desktop/ECE 385/lab5/testbench.sv|
+!i113 1
+o-work work
+R14
+vthree_bit_ra
+R1
+R2
+!i10b 1
+!s100 PA]m^m8EL=LN^7k1L37kG1
+II_REMO>fe:ad9QJnQCQhC2
+R3
+R4
+S1
+R0
+R5
+R6
+R7
+R21
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+R14
+vtoplevel
+R1
+R17
+!i10b 1
+!s100 SD[FT>Y23U][TNmkaV8aT1
+IAI6LhUHTCXQW9Ej:MSFo@0
+R3
+!s105 toplevel_sv_unit
+S1
+R0
+w1582256192
+8C:/Users/unnat/Desktop/ECE 385/lab5/toplevel.sv
+FC:/Users/unnat/Desktop/ECE 385/lab5/toplevel.sv
+L0 1
+R8
+r1
+!s85 0
+31
+R16
+!s107 C:/Users/unnat/Desktop/ECE 385/lab5/toplevel.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/unnat/Desktop/ECE 385/lab5|C:/Users/unnat/Desktop/ECE 385/lab5/toplevel.sv|
+!i113 1
+R12
+R13
+R14

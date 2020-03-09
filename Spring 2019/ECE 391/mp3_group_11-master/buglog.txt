@@ -1,0 +1,50 @@
+Bug Log:
+
+=====================================================
+PLEASE SEE GITLAB ISSUES FOR FULL DETAILS OF EACH BUG
+=====================================================
+
+1. Enabling Paging in CR3 Crashes the OS on return from init_paging - Mar 14
+
+    When stepping through init_paging, CR3 is set to the start address of page_directory, however, when returning from the function,
+    the OS crashes and returns to the GRUB Menu.
+    paging.c
+    Solved by placing page_directory and page_table variables in the data segment by making them file-scoped with static
+
+2. Keyboard Driver Newline with a single space causes find_last_location to return end of line - Mar 14
+
+    find_last_location function buggy.
+    keyboard_handler.c
+    Solved by refactoring keyboard handler.
+
+3. Add more descriptive function headers and add defines for magic numbers on develop/keyboard_driver - Mar 14
+
+    The following files need to have more descriptive function headers and have #defines for magic numbers
+    cursor.h/c
+    keyboard_handler.h/causes
+    Solved by merge
+
+4. [MP3.2] Terminal Wraparound causes first character to not be removed - Mar 15
+
+    If you type in the terminal and it wraps around onto the next line, and then try to backspace everything,
+    the first character is not removed properly.
+    keyboard_handler.c
+    Solved by fixing left most position check
+
+5. System Crash due to many executions - Mar 17
+
+    When running 12 or more instances of ls, the system would crash or become unresponsive due to multiple fault exceptions.
+    syscall_handlers.c
+    Solved by resetting the TSS esp0 field to be the base of corresponding kernel stack and not the last position
+
+6. RTC frequency doesn't respond to changes - Mar 19
+
+    RTC doesn't respond correctly to frequency changes. Base frequency may be off as well.
+    rtc_driver.c
+    Solved by adding frequency to rate conversion function
+
+7. Ctrl+Shift+l should clear screen - Mar 30
+
+    Ctrl+Shift+l does not clear the screen
+    keyboard_handler.c
+    Solved by adjusting text buffer

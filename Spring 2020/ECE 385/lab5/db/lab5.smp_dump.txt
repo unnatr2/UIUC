@@ -1,0 +1,22 @@
+
+State Machine - |toplevel|control_unit:control|state
+Name state.Shift_7 state.Sub_7 state.Shift_6 state.Add_6 state.Shift_5 state.Add_5 state.Shift_4 state.Add_4 state.Shift_3 state.Add_3 state.Shift_2 state.Add_2 state.Shift_1 state.Add_1 state.Shift_0 state.Add_0 state.Start state.Done state.Initial 
+state.Initial 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+state.Done 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+state.Start 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+state.Add_0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+state.Shift_0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+state.Add_1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.Shift_1 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+state.Add_2 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+state.Shift_2 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+state.Add_3 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+state.Shift_3 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+state.Add_4 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+state.Shift_4 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+state.Add_5 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.Shift_5 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.Add_6 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.Shift_6 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.Sub_7 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.Shift_7 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 

@@ -1,0 +1,133 @@
+module control_unit (
+    input logic Clk,
+    input logic Reset,
+    input logic ClearAX_LoadB,
+    input logic Run,
+    input logic M,
+    output logic Shift,
+    output logic Clear_XA,
+    output logic Clear_B,
+    output logic Sub,
+    output logic Load_XA,
+    output logic Load_B
+);
+
+    enum logic [0:0]  { Done, Initial, Start
+                        Add_0, Shift_0,
+                        Add_1, Shift_1,
+                        Add_2, Shift_2,
+                        Add_3, Shift_3,
+                        Add_4, Shift_4,
+                        Add_5, Shift_5,
+                        Add_6, Shift_6,
+                        Sub_7, Shift_7 } state, next_state;
+
+    always_ff @ (posedge Clk)
+    begin
+        state <= next_state;
+    end
+
+    always_comb begin
+        next_state = state;
+        
+        if (~Reset) begin
+            next_state = Initial;
+            Shift = 1'b0;
+            Clear_XA = 1'b1;
+            Clear_B = 1'b1;
+            Sub = 1'b0;
+            Load_XA = 1'b0;
+            Load_B = 1'b0;
+        end else begin
+            Shift = 1'b0;
+            Clear_XA = 1'b0;
+            Clear_B = 1'b0;
+            Sub = 1'b0;
+            Load_XA = 1'b0;
+            Load_B = 1'b0;
+            unique case (state)
+                Initial:
+                    if (~Run) begin // Run is pressed
+                        next_state = Start;
+                    end else begin // Run is not pressed
+                        next_state = Initial;
+                    end
+                Start:
+                    Load_B = 1'b1;
+                    Clear_XA = 1'b1;
+                    next_state = Add_0;
+                Add_0:
+                    if (M) begin
+                        load_XA = 1'b1;
+                    end 
+                    next_state = Shift_0;
+                Shift_0:
+                    Shift = 1'b1;
+                    next_state = Add_1;    
+                Add_1:
+                    if (M) begin
+                        load_XA = 1'b1;
+                    end 
+                    next_state = Shift_1;
+                Shift_1:
+                    Shift = 1'b1;
+                    next_state = Add_2; 
+                Add_2:
+                    if (M) begin
+                        load_XA = 1'b1;
+                    end 
+                    next_state = Shift_2;
+                Shift_2:
+                    Shift = 1'b1;
+                    next_state = Add_3; 
+                Add_3:
+                    if (M) begin
+                        load_XA = 1'b1;
+                    end 
+                    next_state = Shift_3;
+                Shift_3:
+                    Shift = 1'b1;
+                    next_state = Add_4;
+                Add_4:
+                    if (M) begin
+                        load_XA = 1'b1;
+                    end 
+                    next_state = Shift_4;
+                Shift_4:
+                    Shift = 1'b1;
+                    next_state = Add_5;
+                Add_5:
+                    if (M) begin
+                        load_XA = 1'b1;
+                    end 
+                    next_state = Shift_5;
+                Shift_5:
+                    Shift = 1'b1;
+                    next_state = Add_6;
+                Add_6:
+                    if (M) begin
+                        load_XA = 1'b1;
+                    end 
+                    next_state = Shift_6;
+                Shift_6:
+                    Shift = 1'b1;
+                    next_state = Sub_7;
+                Sub_7:
+                    if (M) begin
+                        load_XA = 1'b1;
+                        Sub = 1'b1;
+                    end 
+                    next_state = Shift_7;
+                Shift_7:
+                    Shift = 1'b1;
+                    next_state = Done;
+                Done:
+                    if (~Run) begin // Run is still pressed
+                        next_state = Done;
+                    end else begin // Run has been released
+                        next_state = Initial;
+                    end
+            endcase
+        end
+    end
+endmodule

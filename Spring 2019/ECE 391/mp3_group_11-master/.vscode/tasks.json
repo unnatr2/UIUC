@@ -1,0 +1,38 @@
+{
+  "version": "2.0.0",
+  "runner": "terminal",
+  "tasks": [
+    {
+      "label": "Launch Test VM",
+      "type": "shell",
+      "command": "IF EXIST ${workspaceFolder}\\..\\..\\..\\..\\test_debug.lnk (START \"\" ${workspaceFolder}\\..\\..\\..\\..\\test_debug.lnk) else (START \"\" ${workspaceFolder}\\..\\..\\..\\test_debug.lnk)",
+      "options": {
+        "shell": {
+          "executable": "c:\\windows\\system32\\cmd.exe",
+          "args": ["/c"]
+        }
+      },
+      "presentation": {
+        "panel": "shared",
+        "showReuseMessage": false,
+        "reveal": "never"
+      }
+    },
+    {
+      "label": "Close Test VM",
+      "type": "shell",
+      "command": "taskkill /fi \"WINDOWTITLE eq QEMU (mp3) [Stopped]\" && taskkill /fi \"WINDOWTITLE eq QEMU (mp3)\"",
+      "options": {
+        "shell": {
+          "executable": "c:\\windows\\system32\\cmd.exe",
+          "args": ["/c"]
+        }
+      },
+      "presentation": {
+        "panel": "shared",
+        "showReuseMessage": false,
+        "reveal": "never"
+      }
+    }
+  ]
+}

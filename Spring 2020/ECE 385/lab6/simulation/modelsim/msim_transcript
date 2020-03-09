@@ -1,0 +1,220 @@
+# Reading C:/intelFPGA_lite/18.0/modelsim_ase/tcl/vsim/pref.tcl
+# do lab6_toplevel_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+C:/Users/unnat/Desktop/ECE\ 385/lab6 {C:/Users/unnat/Desktop/ECE 385/lab6/register.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:02:30 on Feb 25,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/unnat/Desktop/ECE 385/lab6" C:/Users/unnat/Desktop/ECE 385/lab6/register.sv 
+# -- Compiling module register
+# 
+# Top level modules:
+# 	register
+# End time: 19:02:30 on Feb 25,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/unnat/Desktop/ECE\ 385/lab6 {C:/Users/unnat/Desktop/ECE 385/lab6/mux.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:02:30 on Feb 25,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/unnat/Desktop/ECE 385/lab6" C:/Users/unnat/Desktop/ECE 385/lab6/mux.sv 
+# -- Compiling module mux
+# 
+# Top level modules:
+# 	mux
+# End time: 19:02:30 on Feb 25,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/unnat/Desktop/ECE\ 385/lab6 {C:/Users/unnat/Desktop/ECE 385/lab6/HexDriver.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:02:30 on Feb 25,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/unnat/Desktop/ECE 385/lab6" C:/Users/unnat/Desktop/ECE 385/lab6/HexDriver.sv 
+# -- Compiling module HexDriver
+# 
+# Top level modules:
+# 	HexDriver
+# End time: 19:02:30 on Feb 25,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/unnat/Desktop/ECE\ 385/lab6 {C:/Users/unnat/Desktop/ECE 385/lab6/datapath.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:02:30 on Feb 25,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/unnat/Desktop/ECE 385/lab6" C:/Users/unnat/Desktop/ECE 385/lab6/datapath.sv 
+# -- Compiling module datapath
+# -- Compiling module incrementer
+# 
+# Top level modules:
+# 	datapath
+# End time: 19:02:31 on Feb 25,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/unnat/Desktop/ECE\ 385/lab6 {C:/Users/unnat/Desktop/ECE 385/lab6/tristate.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:02:31 on Feb 25,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/unnat/Desktop/ECE 385/lab6" C:/Users/unnat/Desktop/ECE 385/lab6/tristate.sv 
+# -- Compiling module tristate
+# 
+# Top level modules:
+# 	tristate
+# End time: 19:02:31 on Feb 25,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/unnat/Desktop/ECE\ 385/lab6 {C:/Users/unnat/Desktop/ECE 385/lab6/test_memory.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:02:31 on Feb 25,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/unnat/Desktop/ECE 385/lab6" C:/Users/unnat/Desktop/ECE 385/lab6/test_memory.sv 
+# -- Compiling module test_memory
+# 
+# Top level modules:
+# 	test_memory
+# End time: 19:02:31 on Feb 25,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/unnat/Desktop/ECE\ 385/lab6 {C:/Users/unnat/Desktop/ECE 385/lab6/SLC3_2.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:02:31 on Feb 25,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/unnat/Desktop/ECE 385/lab6" C:/Users/unnat/Desktop/ECE 385/lab6/SLC3_2.sv 
+# -- Compiling package SLC3_2
+# 
+# Top level modules:
+# 	--none--
+# End time: 19:02:31 on Feb 25,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/unnat/Desktop/ECE\ 385/lab6 {C:/Users/unnat/Desktop/ECE 385/lab6/Mem2IO.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:02:31 on Feb 25,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/unnat/Desktop/ECE 385/lab6" C:/Users/unnat/Desktop/ECE 385/lab6/Mem2IO.sv 
+# -- Compiling module Mem2IO
+# 
+# Top level modules:
+# 	Mem2IO
+# End time: 19:02:31 on Feb 25,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/unnat/Desktop/ECE\ 385/lab6 {C:/Users/unnat/Desktop/ECE 385/lab6/ISDU.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:02:32 on Feb 25,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/unnat/Desktop/ECE 385/lab6" C:/Users/unnat/Desktop/ECE 385/lab6/ISDU.sv 
+# -- Compiling module ISDU
+# 
+# Top level modules:
+# 	ISDU
+# End time: 19:02:32 on Feb 25,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/unnat/Desktop/ECE\ 385/lab6 {C:/Users/unnat/Desktop/ECE 385/lab6/slc3.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:02:32 on Feb 25,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/unnat/Desktop/ECE 385/lab6" C:/Users/unnat/Desktop/ECE 385/lab6/slc3.sv 
+# -- Compiling module slc3
+# 
+# Top level modules:
+# 	slc3
+# End time: 19:02:32 on Feb 25,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/unnat/Desktop/ECE\ 385/lab6 {C:/Users/unnat/Desktop/ECE 385/lab6/memory_contents.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:02:32 on Feb 25,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/unnat/Desktop/ECE 385/lab6" C:/Users/unnat/Desktop/ECE 385/lab6/memory_contents.sv 
+# -- Compiling package memory_contents_sv_unit
+# -- Importing package SLC3_2
+# -- Compiling module memory_parser
+# 
+# Top level modules:
+# 	memory_parser
+# End time: 19:02:32 on Feb 25,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/unnat/Desktop/ECE\ 385/lab6 {C:/Users/unnat/Desktop/ECE 385/lab6/lab6_toplevel.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:02:32 on Feb 25,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/unnat/Desktop/ECE 385/lab6" C:/Users/unnat/Desktop/ECE 385/lab6/lab6_toplevel.sv 
+# -- Compiling module lab6_toplevel
+# 
+# Top level modules:
+# 	lab6_toplevel
+# End time: 19:02:32 on Feb 25,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+C:/Users/unnat/Desktop/ECE\ 385/lab6 {C:/Users/unnat/Desktop/ECE 385/lab6/testbench.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:02:32 on Feb 25,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/unnat/Desktop/ECE 385/lab6" C:/Users/unnat/Desktop/ECE 385/lab6/testbench.sv 
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 19:02:32 on Feb 25,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  testbench
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" testbench 
+# Start time: 19:02:32 on Feb 25,2020
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.lab6_toplevel
+# Loading work.slc3
+# Loading work.HexDriver
+# Loading work.datapath
+# Loading work.incrementer
+# Loading work.register
+# Loading work.mux
+# Loading work.Mem2IO
+# Loading work.tristate
+# Loading work.ISDU
+# Loading work.test_memory
+# Loading work.SLC3_2
+# Loading work.memory_contents_sv_unit
+# Loading work.memory_parser
+# ** Warning: (vsim-3015) C:/Users/unnat/Desktop/ECE 385/lab6/datapath.sv(49): [PCDPC] - Port size (1) does not match connection size (16) for port 'PC'. The port definition is at: C:/Users/unnat/Desktop/ECE 385/lab6/datapath.sv(83).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/tp1/my_slc/d0/PC_incrementer File: C:/Users/unnat/Desktop/ECE 385/lab6/datapath.sv
+# ** Warning: (vsim-3015) C:/Users/unnat/Desktop/ECE 385/lab6/datapath.sv(49): [PCDPC] - Port size (1) does not match connection size (16) for port 'PC_inc'. The port definition is at: C:/Users/unnat/Desktop/ECE 385/lab6/datapath.sv(84).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/tp1/my_slc/d0/PC_incrementer File: C:/Users/unnat/Desktop/ECE 385/lab6/datapath.sv
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 1000 ns
+add wave -position end  sim:/testbench/tp1/my_slc/PC
+add wave -position end  sim:/testbench/tp1/my_slc/IR
+add wave -position end  sim:/testbench/tp1/my_slc/MAR
+add wave -position end  sim:/testbench/tp1/my_slc/MDR
+restart
+# ** Warning: (vsim-3015) C:/Users/unnat/Desktop/ECE 385/lab6/datapath.sv(49): [PCDPC] - Port size (1) does not match connection size (16) for port 'PC'. The port definition is at: C:/Users/unnat/Desktop/ECE 385/lab6/datapath.sv(83).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/tp1/my_slc/d0/PC_incrementer File: C:/Users/unnat/Desktop/ECE 385/lab6/datapath.sv
+# ** Warning: (vsim-3015) C:/Users/unnat/Desktop/ECE 385/lab6/datapath.sv(49): [PCDPC] - Port size (1) does not match connection size (16) for port 'PC_inc'. The port definition is at: C:/Users/unnat/Desktop/ECE 385/lab6/datapath.sv(84).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/tp1/my_slc/d0/PC_incrementer File: C:/Users/unnat/Desktop/ECE 385/lab6/datapath.sv
+run
+add wave -position end sim:/testbench/tp1/my_slc/d0/PC_incrementer/*
+restart
+# ** Warning: (vsim-3015) C:/Users/unnat/Desktop/ECE 385/lab6/datapath.sv(49): [PCDPC] - Port size (1) does not match connection size (16) for port 'PC'. The port definition is at: C:/Users/unnat/Desktop/ECE 385/lab6/datapath.sv(83).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/tp1/my_slc/d0/PC_incrementer File: C:/Users/unnat/Desktop/ECE 385/lab6/datapath.sv
+# ** Warning: (vsim-3015) C:/Users/unnat/Desktop/ECE 385/lab6/datapath.sv(49): [PCDPC] - Port size (1) does not match connection size (16) for port 'PC_inc'. The port definition is at: C:/Users/unnat/Desktop/ECE 385/lab6/datapath.sv(84).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/tp1/my_slc/d0/PC_incrementer File: C:/Users/unnat/Desktop/ECE 385/lab6/datapath.sv
+run
+vlog -reportprogress 300 -work work {C:/Users/unnat/Desktop/ECE 385/lab6/datapath.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:09:24 on Feb 25,2020
+# vlog -reportprogress 300 -work work C:/Users/unnat/Desktop/ECE 385/lab6/datapath.sv 
+# -- Compiling module datapath
+# -- Compiling module incrementer
+# ** Error: (vlog-13069) C:/Users/unnat/Desktop/ECE 385/lab6/datapath.sv(83): near "logic": syntax error, unexpected "SystemVerilog keyword 'logic'", expecting IDENTIFIER.
+# End time: 19:09:24 on Feb 25,2020, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vlog -reportprogress 300 -work work {C:/Users/unnat/Desktop/ECE 385/lab6/datapath.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:10:00 on Feb 25,2020
+# vlog -reportprogress 300 -work work C:/Users/unnat/Desktop/ECE 385/lab6/datapath.sv 
+# -- Compiling module datapath
+# -- Compiling module incrementer
+# 
+# Top level modules:
+# 	datapath
+# End time: 19:10:00 on Feb 25,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.datapath
+# Loading work.incrementer
+run
+# End time: 20:12:51 on Feb 25,2020, Elapsed time: 1:10:19
+# Errors: 1, Warnings: 6
