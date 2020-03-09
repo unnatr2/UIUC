@@ -1,0 +1,26 @@
+// Symbol table
+// Scope level 0:
+//	Symbol Name       Page Address
+//	----------------  ------------
+//	NULL_LINES        3003
+//	COMPUTE_LINES     3008
+//	LINE_LOOP         3009
+//	LTR_LOOP          300A
+//	MULTIPLY          300D
+//	CUT               3016
+//	LOOP_INIT         301A
+//	NEG               301F
+//	DECR              3021
+//	LINE_CHECK        3028
+//	DONE              302E
+//	FONT_ADDR         302F
+//	ZERO              3030
+//	ONE               3031
+//	LETTER            3032
+//	LINES             3033
+//	LINES1            3034
+//	CHARS             3035
+//	SENTINEL          3036
+//	NEG_LINES         3037
+//	FONT_DATA         3038
+

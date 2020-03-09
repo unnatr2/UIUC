@@ -1,0 +1,7 @@
+// Symbol table
+// Scope level 0:
+//	Symbol Name       Page Address
+//	----------------  ------------
+//	FINISH            3005
+//	MESSAGE           3006
+//	ADDRESS           3022

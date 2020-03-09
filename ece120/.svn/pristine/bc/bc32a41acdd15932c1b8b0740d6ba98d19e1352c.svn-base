@@ -1,0 +1,28 @@
+; Unnat Ramjiyani
+
+; 11/10/17
+
+; This code inputs 10 data values into memory, checks if
+; each value is positive or not and if the value is positive,
+; adds it to the result to give a result of all the positive
+; values.
+
+; R1 = Stores value of number from memory
+; R3 = Pointer, points to the memory address of number
+; R4 = Counter, counts down from 10 to 0 to traverse through numbers
+; R5 = Result Register
+
+0011 0001 0000 0000 ; x3100 - starting address of the program
+
+; The program description and code starts here
+
+1110 011 000110001 ; initialize R3 to x3132 (pointer)
+0001 100 100 1 01010 ; initialize R4 to 10 (counter)
+0101 101 101 1 00000 ; initialize R5 to 0 (result)
+0110 001 011 000000 ; load number from memory into R1
+0000 100 000000001 ; check if number is negative, PC+#1
+0001 101 101 0 00 001 ; add value of R1 to R5
+0001 011 011 1 00001 ; increment R3
+0001 100 100 1 11111 ; decrement R4
+0000 101 111111010 ; check if not zero, PC-#6
+1111 0000 0010 0101 ; halt program

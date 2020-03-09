@@ -1,0 +1,7 @@
+	.ORIG x3000
+	.FILL	#1
+	.FILL	#3
+	.FILL	#5
+	.FILL	#7
+	.FILL	#-1
+	.END

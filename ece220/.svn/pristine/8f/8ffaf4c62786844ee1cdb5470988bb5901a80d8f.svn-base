@@ -1,0 +1,44 @@
+#include "sparsemat.h"
+
+#include <stdio.h>
+#include <stdlib.h>
+
+
+
+sp_lils * load_lils(char* input_file)
+{
+
+    return NULL;
+	
+}
+
+
+double gv_lils(sp_lils * mat_l,int row,int col)
+{
+    return 0;
+}
+
+
+
+void set_lils(sp_lils * mat_l, int row, int col, double value)
+{
+	return;
+}
+
+void save_lils(char * file_name,sp_lils * mat_l)
+{
+	return;
+}
+
+
+sp_lils * add_lils(sp_lils * matA, sp_lils * matB){
+
+	return NULL;
+}
+
+
+void destroy_lils(sp_lils * mat_l){
+    return;
+}
+
+

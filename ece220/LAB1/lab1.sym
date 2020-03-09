@@ -1,0 +1,14 @@
+// Symbol table
+// Scope level 0:
+//	Symbol Name       Page Address
+//	----------------  ------------
+//	CHECK_DONE        3002
+//	BACK              3006
+//	NEGATIVE          300C
+//	OUT_LOOP          300D
+//	FIND_DIGIT        3010
+//	PRINT             3017
+//	DONE              301E
+//	LETTER            301F
+//	ZERO              3020
+

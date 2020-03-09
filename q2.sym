@@ -1,0 +1,10 @@
+// Symbol table
+// Scope level 0:
+//	Symbol Name       Page Address
+//	----------------  ------------
+//	NEXTCHAR          4003
+//	EQUAL             400E
+//	STOP              400F
+//	STRING1           4010
+//	STRING2           4011
+

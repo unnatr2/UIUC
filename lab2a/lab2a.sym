@@ -1,0 +1,23 @@
+// Symbol table
+// Scope level 0:
+//	Symbol Name       Page Address
+//	----------------  ------------
+//	SPACE             3004
+//	NEW_LINE          3005
+//	CHAR_RETURN       3006
+//	IS_BALANCED       3007
+//	NEG_OPEN          3007
+//	PUSH              3008
+//	OVERFLOW          3016
+//	DONE_PUSH         3017
+//	PUSH_SaveR3       301A
+//	PUSH_SaveR4       301B
+//	POP               301C
+//	UNDERFLOW         3029
+//	DONE_POP          302A
+//	POP_SaveR3        302D
+//	POP_SaveR4        302E
+//	STACK_END         302F
+//	STACK_START       3030
+//	STACK_TOP         3031
+

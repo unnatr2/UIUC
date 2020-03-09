@@ -1,0 +1,11 @@
+// Symbol table
+// Scope level 0:
+//	Symbol Name       Page Address
+//	----------------  ------------
+//	NEXT_ROW          3003
+//	NEXT_COLUMN       3007
+//	DONE_ROW          300E
+//	DONE              3012
+//	ASCII_NL          3013
+//	SPRITE            3014
+

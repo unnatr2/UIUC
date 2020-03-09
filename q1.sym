@@ -1,0 +1,9 @@
+// Symbol table
+// Scope level 0:
+//	Symbol Name       Page Address
+//	----------------  ------------
+//	LOOP              5002
+//	FINISH            500A
+//	MESSAGE           500B
+//	TABLE             5012
+
